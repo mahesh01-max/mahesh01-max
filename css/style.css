@@ -1,0 +1,134 @@
+/*
+Global css styles
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #343434;
+
+  max-width: 800px;
+  margin: 0 10rem;
+  width: 80%;
+}
+
+a {
+  color: #ffe66d;
+}
+a:hover {
+  text-decoration: none;
+}
+/*
+profile
+----------------------------------------
+*/
+header {
+  background: #2f3061;
+  color: #f7fff7;
+  padding: 10px;
+  text-align: center;
+}
+
+/*
+projects
+------------------------------------
+*/
+.projects {
+  background: #f7fff7;
+  overflow: hidden;
+  border-bottom: dashed grey;
+  /* margin: 0 15px 5px 0; */
+}
+
+.projects a {
+  color: #f7fff7;
+  background: #2f3061;
+  text-decoration: none;
+
+  padding: 0.6rem;
+}
+.projects .btn:hover {
+  background-color: white;
+  color: green;
+}
+/* .projects img {
+  width: 50%;
+  float: left;
+  margin: 0 15px 15px 0;
+} */
+.edu {
+  background-image: url("../images/img1.jpg");
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+.projects img {
+  width: 50%;
+
+  margin: 0 15px 15px 0;
+}
+/*
+work experience
+---------------------------------
+*/
+
+/*
+education
+------------------------------
+*/
+
+/*
+contact-info
+-----------------------------
+*/
+footer {
+  /* background: #343434; */
+  /* color: #f7fff7; */
+  background-image: url("../images/img1.jpg");
+  text-align: center;
+  overflow: auto;
+}
+
+.contact-list {
+  /*remove bullet */
+  list-style-type: none;
+  padding: 0;
+  display: inline-flex;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+.contact-list a:hover {
+  color: red;
+}
+/* .job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0;
+} */
+
+.projects + section:last-of-type {
+  border-bottom: none;
+}
+@media screen and (min-width: 750px) {
+  .projects img {
+    width: 50%;
+    float: left;
+    margin: 0 15px 15px 0;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
