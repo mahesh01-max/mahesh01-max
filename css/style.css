@@ -20,6 +20,12 @@ body {
 a {
   color: #ffe66d;
 }
+body::-webkit-scrollbar{
+  width:0.25rem;
+}
+body::-webkit-scrollbar-track{
+  background: #1e1e24;
+} 
 a:hover {
   text-decoration: none;
 }
