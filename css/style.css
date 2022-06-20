@@ -17,6 +17,13 @@ body {
   width: 80%;
 }
 
+body::-webkit-scrollbar{
+  width:0.25rem;
+}
+body::-webkit-scrollbar-track{
+  background: #1e1e24;
+} 
+
 a {
   color: #ffe66d;
 }
